@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&amp;display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="canvas"></canvas>
+    </div>
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span>Liquid Lab</span>
+      </div>
+      <nav class="site-nav">
+        <a href="#map">Layout</a>
+        <a href="#learn-more">Inspire</a>
+        <a href="#curriculum">Curriculum</a>
+        <a href="#lab">Lab</a>
+        <a href="#resources">Resources</a>
+      </nav>
+      <a class="ghost-cta header-cta" href="#resources">Download kit</a>
+    </header>
+    <main class="content">
+      <section class="hero">
+        <p class="eyebrow">Liquid effect study</p>
+        <h1>Move with the Flow</h1>
+        <p class="lede">
+          This canvas is powered by a Three.js liquid shader that reacts to
+          light, depth, and motion. Use it as a launchpad to craft immersive
+          backgrounds that feel alive.
+        </p>
+        <p class="lede lede-secondary">
+          Layer typography, scroll cues, and sonic details over the surface so
+          each section feels like a scene in a motion title sequence.
+        </p>
+        <ul class="hero-pills">
+          <li>Three.js shaders</li>
+          <li>Parallax scroll</li>
+          <li>Metallic lighting</li>
+        </ul>
+        <a class="cta" href="#learn-more">Start sketching ideas</a>
+      </section>
+      <section class="section map" id="map" aria-label="Layout map">
+        <div class="section-heading">
+          <p class="eyebrow">Layout map</p>
+          <h2>Trace the narrative arc</h2>
+          <p>
+            Every scroll stop carries its own intent: spark emotion, teach the
+            craft, then invite remixing. Use this map as your storyboard.
+          </p>
+        </div>
+        <ol class="map-grid">
+          <li>
+            <span class="map-index">01</span>
+            <div>
+              <h3><a href="#learn-more">Inspiration pad</a></h3>
+              <p>Paint the mood and explain why liquid motion moves people.</p>
+            </div>
+          </li>
+          <li>
+            <span class="map-index">02</span>
+            <div>
+              <h3><a href="#curriculum">Layered curriculum</a></h3>
+              <p>Break the build into digestible chapters with clear wins.</p>
+            </div>
+          </li>
+          <li>
+            <span class="map-index">03</span>
+            <div>
+              <h3><a href="#lab">Hands-on lab</a></h3>
+              <p>Prototype live, screenshot riffs, and capture motion clips.</p>
+            </div>
+          </li>
+          <li>
+            <span class="map-index">04</span>
+            <div>
+              <h3><a href="#resources">Resource hangar</a></h3>
+              <p>Offer tools, talks, and communities that sustain the craft.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+      <section id="learn-more" class="details">
+        <article>
+          <h2>Why it inspires</h2>
+          <p>
+            Liquid surfaces instantly signal energy and curiosity. Blend subtle
+            motion with purposeful storytelling to anchor visitors in your
+            narrative, and punctuate the scene with typography that feels like
+            captions on a cinematic sequence.
+          </p>
+        </article>
+        <article>
+          <h2>How to remix it</h2>
+          <p>
+            Play with displacement maps, metallic materials, and gentle camera
+            drift. Swap textures or layer typography over the canvas to guide
+            the eye, and align every content block to a focal point in the
+            animation.
+          </p>
+        </article>
+        <article>
+          <h2>Share your ripple</h2>
+          <p>
+            Capture a screen, record a loop, or ship the effect in your next
+            portfolio section. The more you experiment, the more fluid your
+            storytelling becomes—pair each deliverable with short notes so
+            viewers learn alongside you.
+          </p>
+        </article>
+      </section>
+      <section class="section curriculum" id="curriculum">
+        <div class="section-heading">
+          <p class="eyebrow">Learning path</p>
+          <h2>Build the effect in layers</h2>
+          <p>
+            Treat each phase like a page in a playbook. Start with motion,
+            inject light, then tell a story with typography and sound.
+          </p>
+        </div>
+        <div class="modules">
+          <article>
+            <h3>01 · Flow Foundations</h3>
+            <p>
+              Create the plane, wire uniforms, and ensure your camera easing
+              feels organic.
+            </p>
+            <ul>
+              <li>Set up renderer + adaptive resize</li>
+              <li>Map cursor or scroll to displacement</li>
+              <li>Keep FPS capped for calm fluidity</li>
+            </ul>
+          </article>
+          <article>
+            <h3>02 · Material Drama</h3>
+            <p>
+              Push metalness/roughness values and blend HDRI lighting for curved
+              reflections.
+            </p>
+            <ul>
+              <li>Experiment with normal maps + color LUTs</li>
+              <li>Balance bloom vs. clarity</li>
+              <li>Layer gradients in post-processing</li>
+            </ul>
+          </article>
+          <article>
+            <h3>03 · Story Layer</h3>
+            <p>
+              Translate emotion with copy, type rhythm, and supporting
+              micro-interactions.
+            </p>
+            <ul>
+              <li>Use scroll snap to bookend scenes</li>
+              <li>Fade in stats, quotes, or case studies</li>
+              <li>Ship a short loop as a teaser</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section lab" id="lab">
+        <div class="section-heading">
+          <p class="eyebrow">Hands-on lab</p>
+          <h2>Remix this shader live</h2>
+          <p>
+            Drop the snippet into your sandbox, tweak one variable at a time,
+            and note how the surface responds. Screenshot your favorite combo.
+          </p>
+        </div>
+        <div class="lab-grid">
+          <div class="lab-steps">
+            <h3>Try this flow</h3>
+            <ol>
+              <li>
+                Change <code>displacementScale</code> to exaggerate ripples.
+              </li>
+              <li>Animate <code>metalness</code> from 0.1 → 0.9 on scroll.</li>
+              <li>
+                Swap <code>loadImage</code> with your own displacement map.
+              </li>
+              <li>Capture the motion using the browser Media Recorder API.</li>
+            </ol>
+          </div>
+          <pre class="code-block"><code>// tweak.js
+import LiquidBackground from 'threejs-components/backgrounds/liquid1'
+
+const scene = LiquidBackground(document.getElementById('canvas'))
+scene.loadImage('assets/noise-xl.png')
+scene.liquidPlane.material.metalness = 0.4
+scene.liquidPlane.material.roughness = 0.15
+scene.liquidPlane.uniforms.displacementScale.value = 7
+scene.setRain(true)
+</code></pre>
+        </div>
+      </section>
+
+      <section class="section resources" id="resources">
+        <div class="resource-hero">
+          <div>
+            <p class="eyebrow">Resource deck</p>
+            <h2>Keep exploring</h2>
+          </div>
+          <p class="lede">
+            Save these go-to items, remix the shader, and keep a pulse on the
+            community so every new liquid scene feels intentional.
+          </p>
+          <div class="cta-row">
+            <a
+              class="cta"
+              href="https://polyhaven.com/"
+              target="_blank"
+              rel="noreferrer"
+              >Grab textures</a
+            >
+            <a class="ghost-cta" href="#lab">Back to lab</a>
+          </div>
+        </div>
+        <div class="resource-panel">
+          <div class="resource-grid">
+            <article>
+              <h3>Texture Vault</h3>
+              <p>
+                Download free 4K displacement maps, caustic overlays, and HDRIs.
+              </p>
+              <a href="https://polyhaven.com/" target="_blank" rel="noreferrer"
+                >Visit Poly Haven →</a
+              >
+            </article>
+            <article>
+              <h3>Shader Deep Dive</h3>
+              <p>
+                Watch the SIGGRAPH talk on fluid BRDFs to anchor your mental
+                model.
+              </p>
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noreferrer"
+                >Queue the session →</a
+              >
+            </article>
+            <article>
+              <h3>Prompt Library</h3>
+              <p>
+                Generate narrative hooks and microcopy that pair with the
+                animation.
+              </p>
+              <a href="https://www.notion.so/" target="_blank" rel="noreferrer"
+                >Open Notion doc →</a
+              >
+            </article>
+            <article>
+              <h3>Community Pulse</h3>
+              <p>
+                Share progress shots, critique lighting, and trade best
+                practices.
+              </p>
+              <a href="https://discord.com/" target="_blank" rel="noreferrer"
+                >Join the Discord →</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p class="credit">Crafted by <span>Naveen Singh</span></p>
+        <p class="copyright">
+          © 2026 Liquid Effect Playbook. All rights reserved to SOUL AI.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
