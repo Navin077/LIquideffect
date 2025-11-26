@@ -22,34 +22,119 @@
       </div>
       <nav class="site-nav">
         <a href="#map">Layout</a>
+        <a href="#signals">Signals</a>
         <a href="#learn-more">Inspire</a>
         <a href="#curriculum">Curriculum</a>
+        <a href="#process">Process</a>
         <a href="#lab">Lab</a>
+        <a href="#stories">Stories</a>
+        <a href="#toolkit">Toolkit</a>
+        <a href="#voices">Voices</a>
         <a href="#resources">Resources</a>
       </nav>
+      <div class="progress-pill" aria-hidden="true">
+        <span>Progress</span>
+        <div class="progress-track">
+          <span class="progress-thumb"></span>
+        </div>
+      </div>
       <a class="ghost-cta header-cta" href="#resources">Download kit</a>
     </header>
     <main class="content">
-      <section class="hero">
-        <p class="eyebrow">Liquid effect study</p>
-        <h1>Move with the Flow</h1>
-        <p class="lede">
-          This canvas is powered by a Three.js liquid shader that reacts to
-          light, depth, and motion. Use it as a launchpad to craft immersive
-          backgrounds that feel alive.
-        </p>
-        <p class="lede lede-secondary">
-          Layer typography, scroll cues, and sonic details over the surface so
-          each section feels like a scene in a motion title sequence.
-        </p>
-        <ul class="hero-pills">
-          <li>Three.js shaders</li>
-          <li>Parallax scroll</li>
-          <li>Metallic lighting</li>
-        </ul>
-        <a class="cta" href="#learn-more">Start sketching ideas</a>
+      <section class="hero observe">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow">Liquid effect study</p>
+            <h1>Move with the Flow</h1>
+            <p class="lede">
+              This canvas is powered by a Three.js liquid shader that reacts to
+              light, depth, and motion. Use it as a launchpad to craft immersive
+              backgrounds that feel alive.
+            </p>
+            <p class="lede lede-secondary">
+              Layer typography, scroll cues, and sonic details over the surface
+              so each section feels like a scene in a motion title sequence.
+            </p>
+            <ul class="hero-pills">
+              <li>Three.js shaders</li>
+              <li>Parallax scroll</li>
+              <li>Metallic lighting</li>
+            </ul>
+            <div class="cta-stack">
+              <a class="cta" href="#learn-more">Start sketching ideas</a>
+              <a class="link-cta" href="#signals">See live signals</a>
+            </div>
+            <div class="scroll-hint">
+              <span>Scroll to choreograph</span>
+              <svg
+                width="10"
+                height="30"
+                viewBox="0 0 10 30"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 0v26"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  opacity="0.4"
+                />
+                <path
+                  d="M2 22l3 4 3-4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="hero-panel">
+            <p class="panel-label">Shader moodboard</p>
+            <div class="hero-swatches">
+              <span class="hero-swatch" data-label="Aurora"></span>
+              <span class="hero-swatch" data-label="Iris"></span>
+              <span class="hero-swatch" data-label="Nebula"></span>
+              <span class="hero-swatch" data-label="Flux"></span>
+            </div>
+            <div class="hero-panel-row">
+              <div>
+                <p class="panel-label">Current tempo</p>
+                <h3>72 BPM</h3>
+                <p>Slow drift keeps copy legible.</p>
+              </div>
+              <div>
+                <p class="panel-label">Depth offset</p>
+                <h3><span id="depthValue">5.0</span></h3>
+                <p>Soft refraction sweet spot.</p>
+              </div>
+            </div>
+            <div class="control-dock">
+              <div>
+                <label for="depthSlider">Displacement scale</label>
+                <input
+                  type="range"
+                  id="depthSlider"
+                  min="2"
+                  max="10"
+                  step="0.5"
+                  value="5"
+                />
+              </div>
+              <div class="control-readout">
+                <span id="depthDisplay">5.0</span>
+                <small>live shader value</small>
+              </div>
+              <button type="button" id="rainToggle" class="ghost-cta mini">
+                Rain: Off
+              </button>
+            </div>
+            <div class="panel-footer">
+              <p>Next step</p>
+              <span>Map copy beats → <strong>Lab</strong></span>
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="section map" id="map" aria-label="Layout map">
+      <section class="section map observe" id="map" aria-label="Layout map">
         <div class="section-heading">
           <p class="eyebrow">Layout map</p>
           <h2>Trace the narrative arc</h2>
@@ -89,7 +174,68 @@
           </li>
         </ol>
       </section>
-      <section id="learn-more" class="details">
+      <section class="section signals observe" id="signals">
+        <div class="section-heading">
+          <p class="eyebrow">Signal boost</p>
+          <h2>Set intent with data</h2>
+          <p>
+            Balance emotion with measurable wins. Use these guardrails to
+            validate that your liquid scene is more than eye candy.
+          </p>
+        </div>
+        <div class="signal-grid">
+          <article>
+            <p class="signal-label">Avg. dwell time</p>
+            <h3>+38%</h3>
+            <p>
+              Motion-led hero sections extend exploration. Tie the loop to story
+              beats every 4–6 seconds.
+            </p>
+          </article>
+          <article>
+            <p class="signal-label">Interaction rate</p>
+            <h3>2.4×</h3>
+            <p>
+              Provide a lab or toggle moment so viewers feel ownership of the
+              effect.
+            </p>
+          </article>
+          <article>
+            <p class="signal-label">Design review passes</p>
+            <h3>90%</h3>
+            <p>
+              Pair shader builds with a one-page storyline deck to keep teams
+              aligned.
+            </p>
+          </article>
+          <article>
+            <p class="signal-label">Hand-off assets</p>
+            <h3>Ready</h3>
+            <p>
+              Export LUTs, caustic maps, and motion guidelines alongside the
+              code so devs ship confidently.
+            </p>
+          </article>
+        </div>
+        <div class="signal-steps">
+          <h4>Mini playbook</h4>
+          <ol>
+            <li>
+              <span>01</span>
+              <p>Storyboard the emotional arc in Figma.</p>
+            </li>
+            <li>
+              <span>02</span>
+              <p>Prototype shader + copy alignment in WebGL.</p>
+            </li>
+            <li>
+              <span>03</span>
+              <p>User-test pacing, then ship the orchestrated flow.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section id="learn-more" class="details observe">
         <article>
           <h2>Why it inspires</h2>
           <p>
@@ -118,7 +264,7 @@
           </p>
         </article>
       </section>
-      <section class="section curriculum" id="curriculum">
+      <section class="section curriculum observe" id="curriculum">
         <div class="section-heading">
           <p class="eyebrow">Learning path</p>
           <h2>Build the effect in layers</h2>
@@ -167,7 +313,62 @@
         </div>
       </section>
 
-      <section class="section lab" id="lab">
+      <section class="section process observe" id="process">
+        <div class="section-heading">
+          <p class="eyebrow">Process timeline</p>
+          <h2>Storyboard → Shader → Story</h2>
+          <p>
+            Keep the journey transparent for collaborators. Each lane is a
+            checkpoint to review motion, copy, and implementation in sync.
+          </p>
+        </div>
+        <div class="process-grid">
+          <article>
+            <header>
+              <span>Phase 01</span>
+              <strong>Concept pulse</strong>
+            </header>
+            <p>
+              Mood boards, color palettes, sound cues, and narrative hooks are
+              aligned in FigJam.
+            </p>
+            <ul>
+              <li>Record 30s Loom with tone references</li>
+              <li>Lock typography rhythm + CTA hierarchy</li>
+            </ul>
+          </article>
+          <article>
+            <header>
+              <span>Phase 02</span>
+              <strong>Shader lab</strong>
+            </header>
+            <p>
+              Prototype displacement, lighting, and camera moves in Three.js
+              with coded guardrails.
+            </p>
+            <ul>
+              <li>Share playground link + control notes</li>
+              <li>Export PNG sequences for reference</li>
+            </ul>
+          </article>
+          <article>
+            <header>
+              <span>Phase 03</span>
+              <strong>Story sync</strong>
+            </header>
+            <p>
+              Blend the interaction with copy, stats, and CTA choreography, then
+              prep the launch kit.
+            </p>
+            <ul>
+              <li>Ship checklist (assets, QA, social cut)</li>
+              <li>Schedule async retro for future riffs</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section lab observe" id="lab">
         <div class="section-heading">
           <p class="eyebrow">Hands-on lab</p>
           <h2>Remix this shader live</h2>
@@ -203,7 +404,197 @@ scene.setRain(true)
         </div>
       </section>
 
-      <section class="section resources" id="resources">
+      <section class="section toolkit observe" id="toolkit">
+        <div class="section-heading">
+          <p class="eyebrow">Toolkit</p>
+          <h2>Ship-ready artifacts</h2>
+          <p>
+            Keep collaborators aligned with a tangible kit: calibration cards,
+            QA rituals, and a remix checklist so the liquid system keeps its
+            polish across launches.
+          </p>
+        </div>
+        <div class="toolkit-grid">
+          <div class="toolkit-cards">
+            <article>
+              <p class="card-label">Color + light</p>
+              <h3>Calibration stack</h3>
+              <p>
+                Snapshot the shader under three lighting rigs and attach LUTs
+                for fast reference in design reviews.
+              </p>
+              <ul>
+                <li>HDR probes + bloom ranges</li>
+                <li>Type contrast swatches</li>
+                <li>Exported noise textures</li>
+              </ul>
+            </article>
+            <article>
+              <p class="card-label">QA rituals</p>
+              <h3>Interaction audits</h3>
+              <p>
+                Bake scroll, pointer, and reduced-motion passes into your QA so
+                motion never blocks accessibility.
+              </p>
+              <ul>
+                <li>Reduced motion media query states</li>
+                <li>Keyboard focus overlays</li>
+                <li>Performance budget readout</li>
+              </ul>
+            </article>
+            <article>
+              <p class="card-label">Handoff</p>
+              <h3>Remix checklist</h3>
+              <p>
+                Give devs and editors a single sheet to clone, adjust copy, and
+                drop in new displacement maps without wandering.
+              </p>
+              <ul>
+                <li>Component tokens + sizing</li>
+                <li>Copy framework + tone notes</li>
+                <li>Shader presets JSON</li>
+              </ul>
+            </article>
+          </div>
+          <div class="toolkit-accordion" aria-label="Liquid toolkit tasks">
+            <h3>Weekly sync rituals</h3>
+            <div class="accordion-item">
+              <button
+                type="button"
+                class="accordion-trigger"
+                aria-expanded="true"
+              >
+                Monday · Inspiration pulse
+                <span aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-panel" role="region">
+                <p>
+                  Share fresh references, swap displacement maps, and pick one
+                  element to exaggerate in the next prototype.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button type="button" class="accordion-trigger">
+                Wednesday · Build standup
+                <span aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-panel" role="region">
+                <p>
+                  Pair engineer + designer to review shader deltas, check perf
+                  metrics, and log tweaks in the remix sheet.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button type="button" class="accordion-trigger">
+                Friday · Story premiere
+                <span aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-panel" role="region">
+                <p>
+                  Record a 60s walkthrough with copy, audio, and motion cues so
+                  stakeholders feel the flow before sign-off.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section stories observe" id="stories">
+        <div class="section-heading">
+          <p class="eyebrow">Flow stories</p>
+          <h2>See how others choreograph</h2>
+          <p>
+            Borrow the beats from these shipped experiments—each story mixes the
+            shader with layout tricks to keep the narrative fluid.
+          </p>
+        </div>
+        <div class="story-grid">
+          <article>
+            <header>
+              <p>Studio Reel</p>
+              <span>3 min loop</span>
+            </header>
+            <p>
+              A looping hero pairs liquid motion with kinetic type and subtle
+              voiceover captions to frame the brand manifesto.
+            </p>
+            <ul>
+              <li>Auto-playing gradients synced to narration</li>
+              <li>Split layout with glass cards for stats</li>
+            </ul>
+          </article>
+          <article>
+            <header>
+              <p>Product Drop</p>
+              <span>Case study</span>
+            </header>
+            <p>
+              Uses the shader as backdrop for product renders, revealing each
+              feature through masked scroll reveals.
+            </p>
+            <ul>
+              <li>Scroll-linked intro text with parallax</li>
+              <li>Ambient sound cue when CTA enters view</li>
+            </ul>
+          </article>
+          <article>
+            <header>
+              <p>Portfolio Lab</p>
+              <span>Interactive</span>
+            </header>
+            <p>
+              Lets visitors toggle displacement maps live, teaching them how
+              surface tension changes with texture and lighting.
+            </p>
+            <ul>
+              <li>Tabbed controls pinned on the right rail</li>
+              <li>Downloadable presets + Figma handoff</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section voices observe" id="voices">
+        <div class="section-heading">
+          <p class="eyebrow">Voices</p>
+          <h2>What collaborators say</h2>
+          <p>
+            Designers, strategists, and engineers sharing how the liquid system
+            changed their launch story.
+          </p>
+        </div>
+        <div class="testimonial-shell">
+          <button
+            class="ghost-cta mini"
+            id="prevTestimonial"
+            aria-label="Previous quote"
+          >
+            Prev
+          </button>
+          <div class="testimonial-panel" id="testimonialPanel">
+            <p class="testimonial-quote">
+              “The shader controls made design reviews feel like live music
+              mixing.”
+            </p>
+            <div class="testimonial-meta">
+              <strong>Riha Patel</strong>
+              <span>Design Lead · HoloSound</span>
+            </div>
+          </div>
+          <button
+            class="ghost-cta mini"
+            id="nextTestimonial"
+            aria-label="Next quote"
+          >
+            Next
+          </button>
+        </div>
+      </section>
+
+      <section class="section resources observe" id="resources">
         <div class="resource-hero">
           <div>
             <p class="eyebrow">Resource deck</p>
